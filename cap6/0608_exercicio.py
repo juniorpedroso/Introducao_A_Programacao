@@ -1,7 +1,6 @@
 # Exercício 6.8 - pequisa sequencial
 lista = [15, 7, 27, 39]
-pesq1 = int(input('Digite um número para procurar: '))
-pesq2 = int(input('Digite outro número para procurar: '))
+pesq = int(input('Digite um número para procurar: '))
 x = 0
 while x < len(lista):
     if pesq == lista[x]:
