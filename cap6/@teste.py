@@ -1,4 +1,5 @@
-for i in range(3, 33, 3):
-    print(i, end=' ')
-print('Fim')
-print()
+l = [5, 9, 13]
+x = 0
+for e in l:
+    print(f'{x} {e}')
+    x += 1
