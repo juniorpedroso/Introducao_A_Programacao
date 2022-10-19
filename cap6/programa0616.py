@@ -1,15 +1,16 @@
-l = [1, 2, 3, 4, 5]
-fim = 5
-print(l)
-while fim > 1:
-    trocou = False
-    cont = 0
-    while cont < (fim - 1):
-        if l[cont] < l[cont + 1]:
-            trocou = True
-            l[cont], l[cont + 1] = l[cont + 1], l[cont]
-        cont += 1
-        print(l)
-    if not trocou:
-        break
-    fim -= 1
+# Programa 6.16 - Listas com elementos de tipos diferentes
+produto1 = ['maçã', 10, 0.30]
+produto2 = ['pera', 5, 0.75]
+produto3 = ['kiwi', 4, 0.98]
+
+def imprimePro(pro):
+    print(f'{pro[0]:6} - ', end='')
+    print(f'{pro[1]:3} - ', end='')
+    print(f'{pro[2]:5.2f}')
+
+print('---------------------')
+print('prod     qtd    valor')
+print('---------------------')
+imprimePro(produto1)
+imprimePro(produto2)
+imprimePro(produto3)
